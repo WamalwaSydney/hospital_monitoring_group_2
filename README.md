@@ -1,6 +1,7 @@
 This is a group assignment and its intent is : A hospital has recently upgraded its system infrastructure to optimize data handling and improve patient monitoring. As part of this upgrade, the hospital requires a system to record heart rate data, archive logs, and securely back them up to a remote server for future access. In this assignment, you will develop three shell scripts to manage these tasks.
 
 Task 1: Heart Rate Monitoring Script
+
 Overview
 This script simulates a heart rate monitor by continuously recording heart rate data every second. It prompts the user to enter a device name (e.g., Monitor_A, Monitor_B, etc.) and logs the following information in a file called heart_rate_log.txt:
 
