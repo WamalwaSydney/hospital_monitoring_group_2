@@ -2,7 +2,8 @@ This is a group assignment and its intent is : A hospital has recently upgraded 
 
 Task 1: Heart Rate Monitoring Script
 
-Overview
+Overview:
+
 This script simulates a heart rate monitor by continuously recording heart rate data every second. It prompts the user to enter a device name (e.g., Monitor_A, Monitor_B, etc.) and logs the following information in a file called heart_rate_log.txt:
 
 Timestamp (current date and time)
