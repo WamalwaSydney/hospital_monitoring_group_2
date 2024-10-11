@@ -58,3 +58,49 @@ To stop the heart rate monitoring script, use the kill command followed by the P
 bash
 Copy code
 kill <PID>
+
+Task 2: Log Archival Script
+
+Overview
+This script archives the heart rate log file (heart_rate_log.txt) by renaming it with a timestamp. The new file name follows the format heart_rate_log.txt_YYYYMMDD_HHMMSS, where:
+
+YYYYMMDD is the current year, month, and day.
+HHMMSS is the current hour, minute, and second.
+
+After archiving, the original heart_rate_log.txt is renamed, allowing the logging process to start fresh.
+
+Features
+Automatically renames the existing log file with a timestamp.
+Ensures logs are archived for future reference.
+The renamed archive file retains all previously recorded heart rate data.
+
+Prerequisites
+Ensure you have already generated heart_rate_log.txt from Task 1 and have a Bash shell available.
+
+Setup Instructions
+Clone the repository to your local machine.
+Navigate to the directory where the script is located.
+Ensure the script is executable:
+bash
+Copy code
+chmod +x archive_log.sh
+Usage
+To run the script, simply execute:
+
+bash
+Copy code
+./archive_log.sh
+Once executed, the script will rename heart_rate_log.txt with a timestamp and display the new archived log file name:
+
+csharp
+Copy code
+Log archived as heart_rate_log.txt_20241003_143501
+You can verify that the log file has been renamed by listing the files in the directory:
+
+bash
+Copy code
+ls
+You should see something like:
+
+Copy code
+heart_rate_log.txt_20241003_143501
