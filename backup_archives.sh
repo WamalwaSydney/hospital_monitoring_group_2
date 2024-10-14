@@ -1,15 +1,17 @@
-#!/bin/bash
+#! /bin/bash
 
-#Create the archive directory
+#Create the archive directory if it doesn't already exit.
 mkdir -p archived_logs_group2
 
-#Move the acrchived log files to the designated directory
+# Move timestamped log files into the designated directory
 
 mv heart_rate_log.txt_* archived_logs_group2/
 
+# Notify the user that the log files have been successfully moved
+
 echo "Log files have been moved to the archived_logs_group2 directory!"
 
-#Enter remote backup details
+# Set up remote backup details
 
 remote_host="5828ed452615.15cf1724.alu-cod.online"
 remote_user="5828ed452615"
