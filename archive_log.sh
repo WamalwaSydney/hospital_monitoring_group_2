@@ -5,7 +5,7 @@
 log_file="heart_rate_log.txt"
 
 # Timestamp format
-timestamp=$(date'+%Y%m%d_%H%M%S')
+timestamp=$(date '+%Y%m%d_%H%M%S')
 
 # Archive file name
 archive_file="${log_file}_${timestamp}"
