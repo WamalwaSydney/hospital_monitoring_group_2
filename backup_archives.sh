@@ -11,8 +11,8 @@ echo "Log files have been moved to the archived_logs_group2 directory!"
 
 #Enter remote backup details
 
-remote_host=""
-remote_user=""
+remote_host="5828ed452615.15cf1724.alu-cod.online"
+remote_user="5828ed452615"
 remote_dir="/home/"
 
 
