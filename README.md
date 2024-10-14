@@ -37,26 +37,18 @@ The script will prompt you for a device name, start logging heart rate data, and
 
 Once the script is running, you can view the process ID (PID) on the terminal. You can use this PID to stop the process if needed:
 
-bash
-Copy code
 kill <PID>
 To monitor the heart rate log in real-time, use:
 
-bash
-Copy code
 tail -f heart_rate_log.txt
 The heart rate will be logged with a timestamp and device name every second in the format:
 
-yaml
-Copy code
 2024-10-03 14:35:02 Monitor_A 61
 2024-10-03 14:35:03 Monitor_A 67
 2024-10-03 14:35:04 Monitor_A 48
 Stopping the Script
 To stop the heart rate monitoring script, use the kill command followed by the PID provided when the script was started:
 
-bash
-Copy code
 kill <PID>
 
 Task 2: Log Archival Script
@@ -81,26 +73,21 @@ Setup Instructions
 Clone the repository to your local machine.
 Navigate to the directory where the script is located.
 Ensure the script is executable:
-bash
-Copy code
+
 chmod +x archive_log.sh
 Usage
 To run the script, simply execute:
 
-bash
-Copy code
+
 ./archive_log.sh
 Once executed, the script will rename heart_rate_log.txt with a timestamp and display the new archived log file name:
 
-csharp
-Copy code
+
 Log archived as heart_rate_log.txt_20241003_143501
 You can verify that the log file has been renamed by listing the files in the directory:
 
-bash
-Copy code
+
 ls
 You should see something like:
 
-Copy code
 heart_rate_log.txt_20241003_143501
