@@ -24,14 +24,9 @@ Setup Instructions
 Clone the repository to your local machine.
 Navigate to the project directory where the script is located.
 Ensure the script is executable:
-bash
-Copy code
 chmod +x heart_rate_monitor.sh
 Usage
 To run the script:
-
-bash
-Copy code
 ./heart_rate_monitor.sh &
 The script will prompt you for a device name, start logging heart rate data, and run in the background.
 
