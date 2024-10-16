@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 #Create the archive directory if it doesn't already exit.
 mkdir -p archived_logs_group2
