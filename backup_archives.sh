@@ -2,14 +2,15 @@
 
 #Create the archive directory if it doesn't already exit.
 mkdir -p archived_logs_group2
+archive_dir=archived_logs_group2
 
 # Move timestamped log files into the designated directory
 
-mv heart_rate_log.txt_* archived_logs_group2/
+mv heart_rate_log.txt_* $archive_dir
 
 # Notify the user that the log files have been successfully moved
 
-echo "Log files have been moved to the archived_logs_group2 directory!"
+echo "Log files have been moved to the archive directory!"
 
 # Set up remote backup details
 
@@ -20,7 +21,7 @@ remote_dir="/home/"
 
 #Backup files to remote server using SCP
 
-scp archived_logs_group2/* "$remote_user@$remote_host:$remote_dir"
+scp -r $archive_dir "$remote_user@$remote_host:$remote_dir"
 
 #Confirm backup
-echo "Archived logs moved and backed up to remote server!"
+echo "Archived backed up to remote server!"
