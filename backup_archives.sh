@@ -24,4 +24,4 @@ remote_dir="/home/"
 scp -r $archive_dir "$remote_user@$remote_host:$remote_dir"
 
 #Confirm backup
-echo "Archived backed up to remote server!"
+echo "Archived files backed up to remote server!"
